@@ -1,0 +1,101 @@
+.cards-icons {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  flex-shrink: 0;
+}
+
+.companent-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 135px;
+  height: 104px;
+  border-radius: 12px;
+  border: 1px solid var(--Line-gray, #F0F0F0);
+  background: var(--White, #FFF);
+}
+
+.companent-icon h1 {
+  color: var(--Black, #191919);
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.pizza-search {
+  margin-top: 50px;
+  padding: 25px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 8px;
+  border: 1px solid var(--Line-gray, #F0F0F0);
+  background: var(--White, #FFF);
+}
+
+.pizza-search h4 {
+  color: var(--Black, #191919);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.inputGroup {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 1em 0 1em 0;
+  width: 550px;
+  position: relative;
+}
+
+.inputGroup input {
+  font-size: 100%;
+  padding: 0.8em;
+  outline: none;
+  border: 2px solid rgb(200, 200, 200);
+  background-color: transparent;
+  border-radius: 20px;
+  width: 100%;
+}
+
+.inputGroup label {
+  font-size: 100%;
+  position: absolute;
+  left: 0;
+  padding: 0.8em;
+  margin-left: 0.5em;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  color: rgb(100, 100, 100);
+}
+
+.inputGroup :is(input:focus, input:valid)~label {
+  transform: translateY(-50%) scale(.9);
+  margin: 0em;
+  margin-left: 1.3em;
+  padding: 0.4em;
+  background-color: #ffffff;
+}
+
+.inputGroup :is(input:focus, input:valid) {
+  border-color: rgb(150, 150, 200);
+}
+
+
+.pizza-search button {
+  border-radius: 6px;
+  background: var(--Primary, #FF7010);
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  border: none;
+  padding: 13px 32px;
+}
